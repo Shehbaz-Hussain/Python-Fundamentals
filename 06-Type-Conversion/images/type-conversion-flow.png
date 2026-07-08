@@ -1,0 +1,488 @@
+# Type Conversion Flowchart Specification
+
+## File Name
+
+```
+type-conversion-flow.png
+```
+
+## Purpose
+
+This flowchart explains the complete process of type conversion in Python.
+
+It visually represents how user input starts as a string, gets converted into
+different data types, is processed, and finally produces output.
+
+The diagram can be recreated using:
+
+- diagrams.net (draw.io)
+- Canva
+- Figma
+- Microsoft PowerPoint
+
+---
+
+# Flowchart Title
+
+## Python Type Conversion Process
+
+---
+
+# Overall Layout
+
+Use a **vertical flowchart layout**.
+
+Flow direction:
+
+```
+Top → Bottom
+```
+
+The hierarchy should clearly show:
+
+1. User Input
+2. Original Data Type
+3. Conversion Choice
+4. Converted Data Type
+5. Processing
+6. Output
+
+---
+
+# Flowchart Structure
+
+## 1. Start Node
+
+### Shape:
+Oval / Terminator
+
+### Label:
+
+```
+Start Program
+```
+
+### Position:
+
+Top center
+
+---
+
+## 2. User Input
+
+### Shape:
+Parallelogram (Input/Output)
+
+### Label:
+
+```
+User Input
+```
+
+### Description:
+
+```
+User enters data
+through input()
+```
+
+### Arrow:
+
+```
+Start Program
+        |
+        ▼
+User Input
+```
+
+---
+
+## 3. String Data Type
+
+### Shape:
+Rectangle (Process)
+
+### Label:
+
+```
+String
+(input())
+```
+
+### Description:
+
+```
+input() always
+returns str
+```
+
+### Arrow:
+
+```
+User Input
+      |
+      ▼
+String (input())
+```
+
+---
+
+# 4. Conversion Decision
+
+### Shape:
+
+Diamond (Decision)
+
+### Label:
+
+```
+Choose Conversion
+```
+
+### Description:
+
+```
+Select required
+data type
+```
+
+---
+
+# Decision Branches
+
+Create four outgoing arrows from the decision diamond.
+
+---
+
+## Branch 1: Integer Conversion
+
+### Arrow Label:
+
+```
+int()
+```
+
+### Shape:
+
+Rectangle
+
+### Label:
+
+```
+Integer Value
+
+<class 'int'>
+```
+
+### Example:
+
+```
+int("25")
+→ 25
+```
+
+---
+
+## Branch 2: Float Conversion
+
+### Arrow Label:
+
+```
+float()
+```
+
+### Shape:
+
+Rectangle
+
+### Label:
+
+```
+Floating Point Value
+
+<class 'float'>
+```
+
+### Example:
+
+```
+float("5.5")
+→ 5.5
+```
+
+---
+
+## Branch 3: String Conversion
+
+### Arrow Label:
+
+```
+str()
+```
+
+### Shape:
+
+Rectangle
+
+### Label:
+
+```
+String Value
+
+<class 'str'>
+```
+
+### Example:
+
+```
+str(100)
+→ "100"
+```
+
+---
+
+## Branch 4: Boolean Conversion
+
+### Arrow Label:
+
+```
+bool()
+```
+
+### Shape:
+
+Rectangle
+
+### Label:
+
+```
+Boolean Value
+
+<class 'bool'>
+```
+
+### Example:
+
+```
+bool(1)
+→ True
+```
+
+---
+
+# 5. Converted Data Type
+
+### Shape:
+
+Rectangle
+
+### Label:
+
+```
+Converted Data Type
+
+int
+float
+str
+bool
+```
+
+### Arrow:
+
+All conversion branches should merge into this box.
+
+---
+
+# 6. Arithmetic / Processing
+
+### Shape:
+
+Rectangle
+
+### Label:
+
+```
+Arithmetic / Processing
+
++
+-
+*
+/
+```
+
+### Description:
+
+```
+Use converted values
+for calculations
+```
+
+### Arrow:
+
+```
+Converted Data Type
+          |
+          ▼
+Arithmetic / Processing
+```
+
+---
+
+# 7. Output
+
+### Shape:
+
+Parallelogram
+
+### Label:
+
+```
+Output
+
+print()
+```
+
+### Description:
+
+```
+Display final result
+```
+
+### Arrow:
+
+```
+Arithmetic / Processing
+          |
+          ▼
+Output (print())
+```
+
+---
+
+# 8. End Node
+
+### Shape:
+
+Oval / Terminator
+
+### Label:
+
+```
+End Program
+```
+
+### Arrow:
+
+```
+Output
+   |
+   ▼
+End Program
+```
+
+---
+
+# Complete Flow Representation
+
+```
+             Start Program
+                    |
+                    ▼
+              User Input
+                    |
+                    ▼
+          String (input())
+                    |
+                    ▼
+          Choose Conversion
+                    |
+        ┌───────────┼───────────┐
+        ▼           ▼           ▼
+      int()       float()      str()
+        |           |           |
+        ▼           ▼           ▼
+      int         float        str
+        \           |          /
+         \          |         /
+          └─────────┴────────┘
+                    |
+                    ▼
+                  bool()
+                    |
+                    ▼
+          Converted Data Type
+                    |
+                    ▼
+      Arithmetic / Processing
+                    |
+                    ▼
+             Output (print())
+                    |
+                    ▼
+              End Program
+```
+
+---
+
+# Design Guidelines
+
+## Colors (Optional)
+
+Suggested colors:
+
+- Start/End:
+  - Dark blue
+
+- Input/Output:
+  - Green
+
+- Conversion Decision:
+  - Orange
+
+- Data Types:
+  - Purple
+
+- Processing:
+  - Gray
+
+---
+
+# Font Recommendations
+
+Use:
+
+- Font: Inter / Arial / Roboto
+- Title Size: 24–32 px
+- Node Text: 14–18 px
+
+---
+
+# Export Settings
+
+Recommended:
+
+```
+Format:
+PNG
+
+Resolution:
+1200 × 800 pixels
+
+Background:
+White or transparent
+```
+
+---
+
+# Educational Purpose
+
+This diagram should help beginners understand:
+
+- Why input needs conversion.
+- How Python changes data types.
+- Which conversion function is used for each purpose.
+- How converted values are used in programs.
+
+---
+
+# End of Flowchart Specification
