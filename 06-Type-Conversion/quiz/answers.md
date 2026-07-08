@@ -1,0 +1,54 @@
+# Answers: Python Type Conversion Quiz
+
+## Module 06 – Type Conversion
+
+1. C
+2. B
+3. A
+4. D
+5. C
+6. B
+7. C
+8. B
+9. B
+10. C
+11. A
+12. C
+13. C
+14. B
+15. C
+16. C
+17. A
+18. C
+19. C
+20. B
+21. C
+22. A
+23. B
+24. C
+25. D
+26. C
+27. B
+28. B
+29. B
+30. B
+31. B
+32. D
+33. C
+34. B
+35. C
+36. C
+37. C
+38. C
+39. B
+40. D
+41. C
+42. A
+43. B
+44. D
+45. B
+46. B
+47. D
+48. B
+49. B
+50. B
