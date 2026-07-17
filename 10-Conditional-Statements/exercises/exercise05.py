@@ -1,28 +1,30 @@
-# ============================================================
-# Exercise 05: Determine Whether a Number is Even or Odd
-# ============================================================
+"""
+Exercise 05: Even or Odd Number Checker
 
-# Problem Statement:
-# Write a Python program that asks the user to enter an integer.
-# Use an if-else statement to determine whether the entered
-# number is even or odd.
+Problem Statement:
+Write a Python program that asks the user to enter an integer and determines
+whether the entered number is even or odd.
 
-# Requirements:
-# - Read one integer from the user.
-# - Use an if-else statement.
-# - Display an appropriate message based on the result.
+Conditions:
+- If the number is divisible by 2, it is an even number.
+- Otherwise, it is an odd number.
 
-# Sample Input:
-# Enter an integer: 24
+Expected Output Examples:
 
-# Expected Output:
-# The number is even.
+Example 1:
+Enter an integer: 24
+The number is even.
 
-# Another Sample Input:
-# Enter an integer: 17
+Example 2:
+Enter an integer: 17
+The number is odd.
+"""
 
-# Expected Output:
-# The number is odd.
+# Ask the user to enter an integer
+number = int(input("Enter an integer: "))
 
-# Instructions:
-# Write your solution below this line.
+# Check whether the number is even or odd
+if number % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
