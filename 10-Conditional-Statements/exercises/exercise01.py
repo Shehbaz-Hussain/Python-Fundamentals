@@ -1,22 +1,28 @@
-# ============================================================
-# Exercise 01: Check Whether a Number is Positive
-# ============================================================
+"""
+Exercise 01: Positive Number Checker
 
-# Problem Statement:
-# Write a Python program that asks the user to enter a number.
-# Use an if statement to check whether the entered number is
-# greater than zero.
+Problem Statement:
+Write a Python program that asks the user to enter a number and determines
+whether the entered number is positive.
 
-# Requirements:
-# - Read one integer from the user.
-# - Use only an if statement.
-# - Display a message only if the number is positive.
+Condition:
+- If the entered number is greater than zero, display an appropriate message.
 
-# Sample Input:
-# Enter a number: 15
+Expected Output Examples:
 
-# Expected Output:
-# The number is positive.
+Example 1:
+Enter a number: 15
+The number is positive.
 
-# Instructions:
-# Write your solution below this line.
+Example 2:
+Enter a number: -7
+
+(No output because only an if statement is used.)
+"""
+
+# Ask the user to enter a number
+number = int(input("Enter a number: "))
+
+# Check whether the number is positive
+if number > 0:
+    print("The number is positive.")
