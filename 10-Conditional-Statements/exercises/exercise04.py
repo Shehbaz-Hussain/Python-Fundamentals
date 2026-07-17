@@ -1,22 +1,28 @@
-# ============================================================
-# Exercise 04: Check Voting Eligibility
-# ============================================================
+"""
+Exercise 04: Voting Eligibility Checker
 
-# Problem Statement:
-# Write a Python program that asks the user to enter their age.
-# Use an if statement to determine whether the person is
-# eligible to vote.
+Problem Statement:
+Write a Python program that asks the user to enter their age and determines
+whether they are eligible to vote.
 
-# Requirements:
-# - Read the user's age as an integer.
-# - Use only an if statement.
-# - Display a message only if the age is 18 or greater.
+Condition:
+- A person is eligible to vote if they are 18 years of age or older.
 
-# Sample Input:
-# Enter your age: 20
+Expected Output Example:
 
-# Expected Output:
-# You are eligible to vote.
+Example 1:
+Enter your age: 20
+You are eligible to vote.
 
-# Instructions:
-# Write your solution below this line.
+Example 2:
+Enter your age: 16
+
+(No output because only an if statement is used.)
+"""
+
+# Ask the user to enter their age
+age = int(input("Enter your age: "))
+
+# Check whether the user is eligible to vote
+if age >= 18:
+    print("You are eligible to vote.")
